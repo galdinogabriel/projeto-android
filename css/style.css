@@ -88,20 +88,3 @@ img {
     display: block;
     margin: auto;
 }
-
-img#android-logo {
-    top: 500px;
-    margin: 0px;
-    position: absolute;
-    width: 20%;
-}
-
-img#youtube-logo {
-    position: absolute;
-    width: 5%;
-    margin: 0px;
-    top: 28.7%;
-    left: 90%;
-
-
-}
