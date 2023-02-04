@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+
+:root {
+    --cor1: #630CF6;
+    --cor2: #1F0BD4;
+    --cor3: #0027EB;
+    --cor4: #0B61D4;
+    --cor5: #0CAEF6;
+
+    --font-display: 'Press Start 2P', cursive;
+    --font-destaque: 'Fredoka One', cursive;
+    --font-padrao: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+header {
+    background: rgb(31,11,212);
+background: radial-gradient(circle, rgba(31,11,212,1) 16%, rgba(0,39,235,1) 83%);
+    box-shadow:
+        1.5px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        4.9px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        22px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+body {
+    margin: 0px;
+}
+
+
+header>h1 {
+    padding-top: 7%;
+    padding-bottom: 7%;
+    margin: 0px;
+    font-family: var(--font-display);
+    font-size: 2.3em;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    text-align: left;
+    padding-bottom: 5%;
+    font-size: 1.5em;
+    margin: auto 30%;
+}
+
+nav>a {
+    margin: 0px 30px 0px 0px;
+    text-decoration: none;
+    font-family: var(--font-destaque);
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    min-width: 320px;
+    max-width: 800px;
+    margin: 5% 30%;
+
+    font-family: var(--font-padrao);
+    color: white;
+    text-align: justify;
+    color: black;
+    font-size: 1.1em;
+    
+}
+main p{
+    line-height: 2em;;
+}
+h1, h2, h3 { 
+    text-align: left;
+    font-size: 2.5em;
+}
+
+time {
+    font-size: 0.8em;
+    color: #031727;
+
+}
+
+
+
+img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+img#android-logo {
+    top: 500px;
+    margin: 0px;
+    position: absolute;
+    width: 20%;
+}
+
+img#youtube-logo {
+    position: absolute;
+    width: 5%;
+    margin: 0px;
+    top: 28.7%;
+    left: 90%;
+
+
+}
