@@ -96,3 +96,15 @@ img {
     display: block;
     margin: auto;
 }
+
+footer{
+    padding: 20px;
+    margin: 0px;
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+}
+footer>p{
+    font-family: var(--font-padrao);
+    margin: 0px
+}
