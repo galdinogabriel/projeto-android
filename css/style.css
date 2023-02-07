@@ -30,30 +30,8 @@ body {
 }
 
 
-header>h1 {
-    padding-top: 2%;
-    margin: 0px;
-    font-family: var(--font-display);
-    font-size: 2.0em;
-    color: white;
-    text-align: center;
-}
 
-nav {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 2%;
-    text-align: left;
-    font-size: 1.3em;
-    margin: 2% 30%;
-}
 
-nav>a {
-    margin: 0% 1%;
-    text-decoration: none;
-    font-family: var(--font-destaque);
-    color: white;
-}
 
 a:hover {
     text-decoration: underline;
@@ -62,9 +40,7 @@ a:hover {
 main {
     padding-left: 20px;
     padding-right: 20px;
-    max-width: 700px;
-    min-width: 320px;
-    margin: 5% auto;
+    margin: 50px auto;
     font-family: var(--font-padrao);
     color: white;
     text-align: justify;
@@ -80,7 +56,7 @@ main p {
 
 h1, h2, h3 {
     text-align: left;
-    font-size: 2.5em;
+    font-size: 2.0em;
 }
 
 time {
@@ -99,7 +75,7 @@ img {
 
 footer{
     padding: 20px;
-    margin: 0px;
+    margin-top: 100px;
     background-color: var(--cor4);
     color: white;
     text-align: center;
@@ -107,4 +83,64 @@ footer{
 footer>p{
     font-family: var(--font-padrao);
     margin: 0px
+}
+
+#menu{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    margin: 0px 0px;;
+    padding: 0px;
+    color: white;
+}
+
+header>h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px;
+    font-family: var(--font-display);
+    font-size: 3.5vw;
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+nav {
+    background-color: #0027EB;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    margin: auto;
+    justify-content: start;
+    gap: 20px;
+    
+}
+nav>ul{
+    box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+    display: block;
+    background-color: var(--cor4);
+    padding: 10px;
+    margin: 0px;
+    list-style: none;
+}
+
+ul>li{
+    padding: 10px;
+}
+ul>li>a{
+    text-decoration: none;
+    font-family: var(--font-destaque);
+    color: white;
+}
+
+#menulist{
+    display: none;
 }

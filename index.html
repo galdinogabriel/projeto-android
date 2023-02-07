@@ -6,20 +6,28 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+            />
         <title>Desafio Curso em Video</title>
     </head>
 
     <body>
         <header>
 
-            <h1>Portal Android</h1>
-
-
-            <nav>
-                <a href="" id="home">Home</a>
-                <a href="">Notícias</a>
-                <a href="">Curiosidades</a>
-                <a href="">Fale Conosco</a>
+            
+                <span id='menu'class="material-symbols-outlined" onclick="cllickMenu()">menu</span>
+                <h1>Portal Android</h1>
+        
+            
+            
+            <nav id="menulist">
+                <ul>
+                    <li><a href="" id="home">Home</a></li>
+                    <li><a href="">Notícias</a></li>
+                    <li><a href="">Curiosidades</a></li>
+                    <li><a href="">Fale Conosco</a></li>
+                </ul>
             </nav>
 
         </header>
@@ -134,7 +142,7 @@
                     essa curiosidade sobre o sistema Android
                     e seu simpático mascote.</p>
             </section>
-          
+
         </main>
         <footer>
             <p>Site criado por Gabriel Henrique.</p>
@@ -142,5 +150,15 @@
 
 
     </body>
+    <script>
+        function cllickMenu(){
+            if(menulist.style.display == 'block'){
+                menulist.style.display = 'none'
+            }else{
+                menulist.style.display='block';
+            }
+            
+        }
+    </script>
 
 </html>
