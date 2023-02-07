@@ -17,21 +17,22 @@
 
 
 header {
+    padding: 0px;
+    margin: 0px;
     background: rgb(31, 11, 212);
     background: radial-gradient(circle, rgba(31, 11, 212, 1) 16%, rgba(0, 39, 235, 1) 83%);
     box-shadow:
-        1.5px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-        4.9px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-        22px 100px 80px rgba(0, 0, 0, 0.07);
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 
 body {
     margin: 0px;
 }
-
-
-
-
 
 a:hover {
     text-decoration: underline;
@@ -40,7 +41,7 @@ a:hover {
 main {
     padding-left: 20px;
     padding-right: 20px;
-    margin: 50px auto;
+    margin: 30px auto;
     font-family: var(--font-padrao);
     color: white;
     text-align: justify;
@@ -51,12 +52,11 @@ main {
 
 main p {
     line-height: 2em;
-    ;
 }
 
 h1, h2, h3 {
     text-align: left;
-    font-size: 2.0em;
+    font-size: 1.5em;
 }
 
 time {
@@ -65,31 +65,30 @@ time {
 
 }
 
-
-
 img {
     width: 100%;
     display: block;
     margin: auto;
 }
 
-footer{
+footer {
     padding: 20px;
     margin-top: 100px;
     background-color: var(--cor4);
     color: white;
     text-align: center;
 }
-footer>p{
+
+footer>p {
     font-family: var(--font-padrao);
     margin: 0px
 }
 
-#menu{
+#menu {
     position: absolute;
-    top: 15px;
+    top: 17px;
     left: 10px;
-    margin: 0px 0px;;
+    margin: 0px 0px;
     padding: 0px;
     color: white;
 }
@@ -99,7 +98,7 @@ header>h1 {
     padding-bottom: 20px;
     margin: 0px;
     font-family: var(--font-display);
-    font-size: 3.5vw;
+    font-size: 1.1em;
     color: white;
     text-align: center;
     display: block;
@@ -107,40 +106,27 @@ header>h1 {
 
 nav {
     background-color: #0027EB;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    font-size: 1em;
-    margin: auto;
-    justify-content: start;
-    gap: 20px;
-    
+    font-size: 1.1em;
 }
-nav>ul{
-    box-shadow:
-  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-  100px 100px 80px rgba(0, 0, 0, 0.07)
-;
-    display: block;
+
+nav>ul {
+    
     background-color: var(--cor4);
     padding: 10px;
     margin: 0px;
     list-style: none;
 }
 
-ul>li{
+ul>li {
     padding: 10px;
 }
-ul>li>a{
+
+ul>li>a {
     text-decoration: none;
     font-family: var(--font-destaque);
     color: white;
 }
 
-#menulist{
+#menulist {
     display: none;
 }
