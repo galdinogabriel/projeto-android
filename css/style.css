@@ -215,6 +215,8 @@ form input {
 }
 
 textarea{
+    padding-left: 10px;
+    padding-top: 10px;
     width: 90%;
     border-radius: 10px;
     margin:10px 0px 10px 0px;
