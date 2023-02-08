@@ -59,28 +59,27 @@
         <main>
             <h1 style="text-align: center;">Fale com nossa equipe!</h1>
             <p>
-                Por favor, utilize o campo de assunto corresponde a sua
-                mensagem, caso contrário, sua mensagem levará mais tempo para
-                ser respondida.
+                Por favor, utilize o campo de <strong>assunto</strong> corresponde a sua
+                mensagem, caso contrário, sua mensagem <em>levará mais tempo para
+                    ser respondida.</em> 
             </p>
             <hr>
 
             <form action="" class="">
-                <label for="id-user">Seu nome:</label>
+            
                 <input type="text" name="user" id="id-user" required
                     placeholder="Nome">
-                <label for="id-email">E-mail:</label>
+                
                 <input type="email" name="email" id="id-email" required
                     placeholder="E-mail">
-                <label for="id-assunto">Assunto:</label>
                 <select name="assunto" id="id-assunto">
+                    <option value="none">-- Assunto --</option>
                     <option value="Recomendacao">Recomendação</option>
                     <option value="anunciar">Anunciar</option>
                     <option value="problema">Relatar problema</option>
                     <option value="outros">Outro</option>
                 </select><br>
 
-                <label for="id-mensagem">Mensagem</label>
                 <textarea name="mensagem" id="id-mensagem" cols="30" rows="10"
                     placeholder="Digite sua mensagem aqui..."></textarea>
                 <input type="submit" name="enviar" id="enviar" required>

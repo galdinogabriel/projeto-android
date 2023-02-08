@@ -24,7 +24,10 @@ span#menu-text {
 header #menu-hamburger-icon {
     display: none;
 }
+header nav#menulist {
+    display: block;
 
+}
 nav>ul{
     text-align: center;
     position: absolute;
