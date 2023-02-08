@@ -88,7 +88,7 @@ header>h1 {
     padding-bottom: 20px;
     margin: 0px;
     font-family: var(--font-display);
-    font-size: 1.1em;
+    font-size: 1.0em;
     color: white;
     text-align: center;
     display: block;
@@ -130,12 +130,13 @@ a:hover {
 
 header nav#menulist {
     display: none;
+    
 }
 
 header #menu-hamburger-icon {
     position: absolute;
     top: 17px;
-    left: 20px;
+    left: 15px;
     margin: 0px 0px;
     padding: 0px;
     color: white;
@@ -172,5 +173,8 @@ img.background-headline {
 .social-media-icon {
     display: inline-block;
     width: 30px;
-    margin: 20px 6px 0px 6px;
+    margin: 20px 2%;
+}
+.container-social-media{
+    text-align: center;
 }

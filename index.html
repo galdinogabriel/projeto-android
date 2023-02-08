@@ -6,39 +6,59 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-tablet-media.css" media="screen
+            and (min-width: 992px)">
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
             />
+
         <title>Portal Droid</title>
     </head>
 
-    <body>
-        <header>
+    <body onresize="changeSize()">
+        <header class="header-container">
 
-            
-                <span id='menu-hamburger-icon'class="material-symbols-outlined" onclick="cllickMenu()">menu</span>
-                <h1>Portal Droid</h1>
-        
-            
-            
+
+            <span id='menu-hamburger-icon'class="material-symbols-outlined"
+                onclick="cllickMenu()">menu</span>
+            <h1>Portal Droid</h1>
+
+
+
             <nav id="menulist">
                 <ul>
-                    <li onclick="cllickMenu()"><span id="menu-text">Fechar</span></li><span id='close'class="material-symbols-outlined" onclick="cllickMenu()">close</span>
+                    <li onclick="cllickMenu()"><span id="menu-text">Fechar</span></li><span
+                        id='close'class="material-symbols-outlined"
+                        onclick="cllickMenu()">close</span>
                     <hr>
-                    <li><a href="" id="home">Home</a></li>
-                    <li><a href="">Notícias</a></li>
-                    <li><a href="">Curiosidades</a></li>
-                    <li><a href="">Fale Conosco</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Curiosidades</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
                     <hr>
-                    <a href=""><img src="imgs/facebook-done.png" alt="" class="social-media-icon"></a>
-                    <a href=""><img src="imgs/instagram-done.png" alt="" class="social-media-icon"></a>
-                    <a href=""><img src="imgs/youtube-done.png" alt="" class="social-media-icon"></a>
-                    <a href=""><img src="imgs/twitter-done.png" alt="" class="social-media-icon"></a>
+                    <div class='container-social-media'>
+                        <a href=""><img src="imgs/facebook-done.png"
+                                alt="facebook"
+                                class="social-media-icon"></a>
+                        <a href=""><img src="imgs/instagram-done.png"
+                                alt="instagram"
+                                class="social-media-icon"></a>
+                        <a href=""><img src="imgs/youtube-done.png"
+                                alt="youtube"
+                                class="social-media-icon"></a>
+                        <a href=""><img src="imgs/twitter-done.png"
+                                alt="twitter"
+                                class="social-media-icon"></a>
+                    </div>
                 </ul>
             </nav>
 
         </header>
-        <img class='background-headline' src="imgs/android-google.jpeg" alt="">
+        <picture>
+            <source media="(min-width: 992px)" srcset="imgs\android-google-desktop.png">
+            <img class='background-headline' src="imgs/android-google.jpeg" alt="robo android">
+        </picture>
+        
         <main>
             <section class="Curiosidades">
                 <article>
@@ -159,6 +179,16 @@
 
     </body>
     <script>
+
+        function changeSize(){
+            if(window.innerWidth>= 992){
+                menulist.style.display='block';
+            }else{
+                menulist.style.display = 'none'
+            }
+        }
+
+
         function cllickMenu(){
             if(menulist.style.display == 'block'){
                 menulist.style.display = 'none'
@@ -168,5 +198,4 @@
             
         }
     </script>
-
 </html>
