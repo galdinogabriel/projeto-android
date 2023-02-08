@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
     <head>
         <meta charset="UTF-8">
@@ -31,10 +31,10 @@
                         id='close'class="material-symbols-outlined"
                         onclick="cllickMenu()">close</span>
                     <hr>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#">Notícias</a></li>
                     <li><a href="#">Curiosidades</a></li>
-                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="faleconosco.html">Fale Conosco</a></li>
                     <hr>
                     <div class='container-social-media'>
                         <a href=""><img src="imgs/facebook-done.png"
@@ -55,10 +55,12 @@
 
         </header>
         <picture>
-            <source media="(min-width: 992px)" srcset="imgs\android-google-desktop.png">
-            <img class='background-headline' src="imgs/android-google.jpeg" alt="robo android">
+            <source media="(min-width: 768px)"
+                srcset="imgs\android-google-desktop.png">
+            <img class='background-headline' src="imgs/android-google.jpeg"
+                alt="robo android">
         </picture>
-        
+
         <main>
             <section class="Curiosidades">
                 <article>
@@ -180,6 +182,7 @@
     </body>
     <script>
 
+        
         function changeSize(){
             if(window.innerWidth>= 992){
                 menulist.style.display='block';
@@ -187,6 +190,7 @@
                 menulist.style.display = 'none'
             }
         }
+        
 
 
         function cllickMenu(){

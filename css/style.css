@@ -130,7 +130,7 @@ a:hover {
 
 header nav#menulist {
     display: none;
-    
+
 }
 
 header #menu-hamburger-icon {
@@ -175,6 +175,75 @@ img.background-headline {
     width: 30px;
     margin: 20px 2%;
 }
-.container-social-media{
+
+.container-social-media {
     text-align: center;
+}
+
+
+form {
+    border-radius: 10px;
+    background-color: var(--cor3);
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+label {
+    display: none;
+    margin: 10px 0px;
+}
+
+form input {
+    outline: invert;
+    padding-left: 10px;
+    width: 80%;
+    display: block;
+    margin:10px 0px 10px 0px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0.5px #303030 solid;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+textarea{
+    width: 90%;
+    border-radius: 10px;
+    margin:10px 0px 10px 0px;
+}
+
+select{
+    margin:10px 0px 10px 0px;
+    font-family: var(--font-padrao);
+    height: 35px;
+    border-radius: 10px;
+}
+
+input#enviar{
+   
+    background: #0066A2;
+	color: white;
+	border-style: outset;
+	border-color: #0066A2;
+	height: 50px;
+	width: 100px;
+	font: bold15px arial,sans-serif;
+	text-shadow: none;
+}
+
+input#enviar:hover{
+    background: #016ABC;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px black;
+	
 }
