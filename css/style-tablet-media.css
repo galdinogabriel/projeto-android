@@ -1,6 +1,8 @@
 main {
     max-width: 800px;
 }
+
+
 header>h1{
     text-align: start;
     padding: 20px;
@@ -41,4 +43,13 @@ nav>ul{
 nav>ul>li {
     padding: 5px;
     display: inline-block;
+}
+
+
+
+header>h1{
+    padding-left:150px;
+}
+ul>li>a{
+    padding: 0px 10px;
 }
