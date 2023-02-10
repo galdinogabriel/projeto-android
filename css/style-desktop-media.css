@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/*
+modificacoes do titulo do site para desktop
+*/
+
+header>h1{
+    padding-left: 50px;
+    padding-right: 50px;
+   
+}
+
+
+/*
+desaparecer com elementos do menu hamburger
+------------------------------------------------
+*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+hr {
+    display: none;
+}
+
+header nav#menulist {
+    display: inline-block;
+}
+
+header span#menu-hamburger-icon {
+    display: none;
+}
+
+.container-social-media {
+    display: none;
+}
+
+ul span#close-icon-menu {
+    display: none;
+}
+
+ul>li>#menu-text-close {
+    display: none;
+}
+
+/*
+Modificações para o menu se ajustar para desktop
+*/
+
+header>nav>ul {
+    position: static;
+    width: unset;
+    height: unset;
+    background-color: unset;
+    box-shadow: none;
+    left: -50%;
+    right: -50%;
+}
+
+nav>ul>li {
+    padding: 5px;
+    display: inline-block;
+}
+
+ul>li>a {
+    padding: 0px 10px;
+}
+
+main {
+    max-width: 800px;
+}

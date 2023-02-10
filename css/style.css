@@ -1,7 +1,12 @@
+@charset "utf-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 
+/*CSS - padrao mobile first*/
+
+/* definindo variaveis */
 :root {
     --cor1: #9d0000;
     --cor2: #000000;
@@ -15,7 +20,13 @@
 }
 
 
+body {
+    margin: 0px;
+    padding: 0px;
+}
 
+
+/* configurações iniciais do header */
 header {
     padding: 0px;
     margin: 0px;
@@ -29,60 +40,6 @@ header {
         100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 
-body {
-    margin: 0px;
-}
-
-
-
-main {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0px auto;
-    font-family: var(--font-padrao);
-    color: white;
-    text-align: justify;
-    color: black;
-    font-size: 1.1em;
-
-}
-
-main p {
-    line-height: 1.5em;
-}
-
-h1, h2, h3 {
-    text-align: left;
-    font-size: 1.5em;
-}
-
-time {
-    font-size: 0.8em;
-    color: #031727;
-
-}
-
-img {
-    width: 100%;
-    display: block;
-    margin: auto;
-}
-
-footer {
-    padding: 20px;
-    margin-top: 100px;
-    background-color: var(--cor2);
-    color: white;
-    text-align: center;
-}
-
-footer>p {
-    font-family: var(--font-padrao);
-    margin: 0px
-}
-
-
-
 header>h1 {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -94,7 +51,16 @@ header>h1 {
     display: block;
 }
 
-nav>ul {
+header>#menu-hamburger-icon {
+    position: absolute;
+    top: 17px;
+    left: 15px;
+    margin: 0px 0px;
+    padding: 0px;
+    color: white;
+}
+
+header>nav>ul {
     position: absolute;
     position: fixed;
     top: 0px;
@@ -113,12 +79,12 @@ nav>ul {
         174px 0px 80px rgba(0, 0, 0, 0.1);
 }
 
-ul>li {
+header>nav>ul>li {
     padding: 10px;
     font-size: 1.1em;
 }
 
-ul>li>a {
+nav>ul>li>a {
     text-decoration: none;
     font-family: var(--font-destaque);
     color: white;
@@ -130,31 +96,86 @@ a:hover {
 
 header nav#menulist {
     display: none;
-
 }
 
-header #menu-hamburger-icon {
-    position: absolute;
-    top: 17px;
-    left: 15px;
-    margin: 0px 0px;
-    padding: 0px;
-    color: white;
+hr{
+    display: none;
 }
 
-span#close {
+ul span#close-icon-menu {
     position: absolute;
     color: white;
     top: 20px;
     left: 90px
 }
 
-span#menu-text {
-
+ul>li>#menu-text-close {
     font-size: 1.1em;
     font-family: var(--font-destaque);
     color: white;
 }
+
+.social-media-icon {
+    display: inline-block;
+    width: 30px;
+    margin: 20px 2%;
+}
+
+.container-social-media {
+    text-align: center;
+}
+
+
+/*Definicoes para o conteudo principal da página*/
+
+main {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0px auto;
+    font-family: var(--font-padrao);
+    color: white;
+    text-align: justify;
+    color: black;
+    font-size: 1.1em;
+
+}
+
+main>p {
+    line-height: 1.5em;
+}
+
+main h1, h2, h3 {
+    text-align: left;
+    font-size: 1.5em;
+}
+
+main time {
+    font-size: 0.8em;
+    color: #031727;
+
+}
+
+main img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+/*Definicoes para o footer*/
+
+footer {
+    padding: 20px;
+    margin-top: 100px;
+    background-color: var(--cor2);
+    color: white;
+    text-align: center;
+}
+
+footer>p {
+    font-family: var(--font-padrao);
+    margin: 0px
+}
+
 
 img.background-headline {
     padding: 0px;
@@ -170,16 +191,8 @@ img.background-headline {
         174px 0px 80px rgba(0, 0, 0, 0.1);
 }
 
-.social-media-icon {
-    display: inline-block;
-    width: 30px;
-    margin: 20px 2%;
-}
 
-.container-social-media {
-    text-align: center;
-}
-
+/*defincoes do formulario*/
 
 form {
     border-radius: 10px;
