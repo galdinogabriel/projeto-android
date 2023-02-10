@@ -92,6 +92,8 @@ nav>ul>li>a {
 
 a:hover {
     text-decoration: underline;
+    cursor: pointer;
+    
 }
 
 header nav#menulist {
@@ -109,12 +111,18 @@ ul span#close-icon-menu {
     left: 90px
 }
 
+ul span#close-icon-menu:hover{
+    cursor: pointer;
+}
+
 ul>li>#menu-text-close {
     font-size: 1.1em;
     font-family: var(--font-destaque);
     color: white;
 }
-
+ul>li>#menu-text-close:hover{
+    cursor: pointer;
+}
 .social-media-icon {
     display: inline-block;
     width: 30px;
