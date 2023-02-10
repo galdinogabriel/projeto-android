@@ -1,2 +1,1 @@
-# projeto-android
- Projeto idealizado por Gustavo Guanabara.
+# projeto-android com html, css e javascript.
